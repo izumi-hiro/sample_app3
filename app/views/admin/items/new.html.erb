@@ -1,1 +1,4 @@
 <h2>商品新規登録</h2>
+<%= form_with model: @item_image do |f| %>
+  <%= f.file_field :image, accept: "image/*", class: "w-100" %>
+<% end %>
